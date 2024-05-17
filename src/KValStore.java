@@ -1,9 +1,10 @@
+import java.util.HashMap;
+
 public class KValStore<K,V> {
     private K key;
     private V value;
     private static int INITIAL_SIZE = 1000;
     private V[] arr;
-
     public KValStore(K key, V value, V[] arr) {
         this.key = key;
         this.value = value;
