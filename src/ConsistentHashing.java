@@ -1,8 +1,10 @@
+import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
 
 class ConsistentHashing{
 
-    private final Map<Long,T> ring;
+    private final Map<Long,?> ring;
     private int numberOfReplicas;
     private List<String> physicalServers; //originally this should be server object
     private final Object hashFunction; // originally this should be a class consisting of the hash function i.e murmur
